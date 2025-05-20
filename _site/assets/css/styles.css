@@ -437,10 +437,49 @@ body::after {
 .tech-item i {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    background: var(--gradient-subtle);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: currentColor;
+    transition: transform 0.3s ease;
+}
+
+/* Brand-specific colors */
+.tech-item[title="Laravel"] i {
+    color: #FF2D20;
+}
+
+.tech-item[title="Python"] i {
+    color: #3776AB;
+}
+
+.tech-item[title="React"] i {
+    color: #61DAFB;
+}
+
+.tech-item[title="Flutter"] i {
+    color: #02569B;
+}
+
+.tech-item[title="Node.js"] i {
+    color: #339933;
+}
+
+.tech-item[title="JavaScript"] i {
+    color: #F7DF1E;
+}
+
+.tech-item[title="Docker"] i {
+    color: #2496ED;
+}
+
+.tech-item[title="Redis"] i {
+    color: #DC382D;
+}
+
+.tech-item[title="MySQL"] i {
+    color: #4479A1;
+}
+
+.tech-item:hover i {
+    transform: translateY(-2px);
 }
 
 .tech-item span {
@@ -571,6 +610,15 @@ body::after {
 
 .contact-method:hover span {
     color: var(--primary);
+}
+
+.profile-link {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.profile-link:focus {
+    outline: none;
 }
 
 /* Animations */
@@ -861,4 +909,13 @@ section:nth-child(even) {
 .hero-social-links a:hover {
     color: #fff;
     transform: translateY(-3px);
+}
+
+.name-link {
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.name-link:hover {
+    opacity: 0.8;
 }
