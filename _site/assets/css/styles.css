@@ -185,10 +185,10 @@ body::before {
 body::after {
     content: '';
     position: fixed;
-    top: -50%;
-    left: -50%;
-    right: -50%;
-    bottom: -50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: 
         radial-gradient(
             circle at center,
@@ -198,26 +198,7 @@ body::after {
         );
     z-index: -1;
     pointer-events: none;
-    animation: gradientMove 20s linear infinite;
     opacity: 0.7;
-}
-
-@keyframes gradientMove {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-    25% {
-        transform: translate(10%, 10%) rotate(90deg);
-    }
-    50% {
-        transform: translate(0, 20%) rotate(180deg);
-    }
-    75% {
-        transform: translate(-10%, 10%) rotate(270deg);
-    }
-    100% {
-        transform: translate(0, 0) rotate(360deg);
-    }
 }
 
 .container {
