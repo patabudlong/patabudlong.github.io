@@ -291,8 +291,15 @@ body::after {
 
 /* Style for bullet points in hero headline */
 .hero-headline span {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.7);
     margin: 0 0.5rem;
+}
+
+.hero-headline i {
+    font-size: 0.6em;
+    color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    top: -2px;
 }
 
 .lead {
