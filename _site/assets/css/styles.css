@@ -372,39 +372,55 @@ body {
 }
 
 /* Contact Section */
-.contact-container {
-    max-width: 600px;
-    margin: 0 auto;
+.contact-section {
+    padding: 4rem 0;
+    background: transparent;
+}
+
+.contact-intro {
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: var(--text-secondary);
 }
 
 .contact-methods {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .contact-method {
-    background: var(--surface);
+    background: transparent;
     padding: 1rem 1.5rem;
     border-radius: 0.75rem;
-    border: 1px solid var(--border);
     transition: var(--transition);
     display: flex;
     align-items: center;
     gap: 1rem;
     text-decoration: none;
     color: var(--text-primary);
+    border: 1px solid var(--border);
 }
 
 .contact-method:hover {
     transform: translateX(5px);
-    border-color: var(--primary-light);
-    background: linear-gradient(to right, var(--surface), #f8fafc);
+    border-color: var(--primary);
+    background: var(--surface);
 }
 
 .contact-method i {
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+
+.contact-method span {
+    color: var(--text-secondary);
+}
+
+.contact-method:hover span {
     color: var(--primary);
 }
 
@@ -545,5 +561,41 @@ html {
         right: 1.5rem;
         width: 3rem;
         height: 3rem;
+    }
+}
+
+/* Update section background handling */
+section:nth-child(even) {
+    background: var(--background);
+}
+
+section:last-child {
+    background: transparent;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.about-content .lead {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+/* Optional: Add emphasis to location and role */
+.about-content .highlight {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* Enhance spacing for mobile */
+@media (max-width: 768px) {
+    .about-content .lead {
+        font-size: 1rem;
+        text-align: left;
     }
 } 
