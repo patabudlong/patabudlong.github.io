@@ -24,5 +24,34 @@
     <footer class="footer">
         <!-- Add footer if needed -->
     </footer>
+
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <script>
+        // Scroll to Top functionality
+        const scrollBtn = document.querySelector('.scroll-to-top');
+        
+        window.addEventListener('scroll', () => {
+            // Show button when page is scrolled more than 300px
+            const scrolled = window.scrollY;
+            const viewportHeight = window.innerHeight;
+            const fullHeight = document.documentElement.scrollHeight;
+            
+            if (scrolled + viewportHeight > fullHeight - 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+        
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html> 
