@@ -1,7 +1,6 @@
 # Jekyll build output
 _site/
-.sass-cache/
-.jekyll-cache/
+.jekyll-cache
 .jekyll-metadata
 
 # Ruby dependencies
@@ -11,7 +10,9 @@ vendor/
 # Environment files
 .env
 .env.local
-.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # OS generated files
 .DS_Store
@@ -23,8 +24,8 @@ ehthumbs.db
 Thumbs.db
 
 # Editor directories and files
-.idea/
-.vscode/
+.idea
+.vscode
 *.swp
 *.swo
 *.swn
