@@ -1,3 +1,19 @@
-title: Peregrino "Jun" Tabudlong Jr.
-description: Full Stack Developer
+title: Jun's Portfolio
+description: Full Stack Developer Portfolio
+url: "https://yourusername.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
 theme: minima 
