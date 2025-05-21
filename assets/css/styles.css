@@ -1205,10 +1205,19 @@ html {
     padding: 0 2rem;
 }
 
-/* Style for second row with single card */
-.project-card:nth-child(4) {
-    grid-column: 2;
+/* Position fourth and fifth cards in second row */
+.project-card:nth-child(4),
+.project-card:nth-child(5) {
     margin-top: 2rem;
+}
+
+/* Center cards in second row */
+.project-card:nth-child(4) {
+    grid-column: 1 / 2;
+}
+
+.project-card:nth-child(5) {
+    grid-column: 2 / 3;
 }
 
 @media (max-width: 768px) {
@@ -1217,7 +1226,7 @@ html {
         padding: 0 1rem;
     }
     
-    .project-card:nth-child(4) {
+    .project-card:nth-child(n+4) {
         grid-column: auto;
         margin-top: 1rem;
     }
