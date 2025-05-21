@@ -791,7 +791,21 @@ body::after {
     }
 
     .container {
-        padding: 0;
+        padding: 0 1rem;
+        max-width: 100%;
+    }
+
+    .contact-section {
+        padding: 3rem 1rem;
+    }
+
+    .contact-methods {
+        padding: 0 0.5rem;
+        width: 100%;
+    }
+
+    .contact-method {
+        margin: 0 0.5rem;
     }
 
     .tech-categories {
