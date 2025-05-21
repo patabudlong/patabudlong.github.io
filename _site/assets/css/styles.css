@@ -645,6 +645,10 @@ body::after {
     color: #635BFF;
 }
 
+.tech-item[title="Supabase"] i {
+    color: #24B47E;
+}
+
 .tech-item:hover i {
     transform: translateY(-2px);
 }
