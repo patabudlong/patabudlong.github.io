@@ -156,6 +156,20 @@ body {
     padding: 0;
     position: relative;
     min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html, body {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+main {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
 }
 
 body::before {
@@ -794,30 +808,14 @@ body::after {
         padding: 0;
     }
 
-    .tech-categories {
-        gap: 1rem;
-        padding: 0;
-        margin: 0;
+    .tech-stack {
         width: 100vw;
-        overflow-x: hidden;
-    }
-    
-    .tech-category {
-        padding: 1rem 0.75rem;
-        width: 100%;
-    }
-
-    .tech-icons {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 0.5rem;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
-    
-    .tech-item {
-        padding: 0.75rem 0.25rem;
-        width: 100%;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        padding: 0 1rem;
     }
 }
 
