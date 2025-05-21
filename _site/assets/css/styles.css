@@ -1025,3 +1025,20 @@ section:nth-child(even) {
         margin-bottom: 1.25rem;
     }
 }
+
+.interests-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(75, 85, 99, 0.1);
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .interests-section {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        font-size: 1rem;
+    }
+}
