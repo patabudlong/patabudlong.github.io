@@ -535,6 +535,38 @@ body::after {
     color: #300D4F;
 }
 
+.tech-item[title="Git"] i {
+    color: #F05032;
+}
+
+.tech-item[title="Jira"] i {
+    color: #0052CC;
+}
+
+.tech-item[title="AWS"] i {
+    color: #FF9900;
+}
+
+.tech-item[title="Tailwind"] i {
+    color: #06B6D4;
+}
+
+.tech-item[title="Bootstrap"] i {
+    color: #7952B3;
+}
+
+.tech-item[title="Twilio"] i {
+    color: #F22F46;
+}
+
+.tech-item[title="MSSQL"] i {
+    color: #CC2927;
+}
+
+.tech-item[title="Stripe"] i {
+    color: #635BFF;
+}
+
 .tech-item:hover i {
     transform: translateY(-2px);
 }
