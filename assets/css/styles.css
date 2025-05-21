@@ -455,7 +455,16 @@ body::after {
 }
 
 .tech-item[title="Flutter"] i {
-    color: #02569B;
+    color: #54C5F8;
+    background: linear-gradient(
+        135deg,
+        #54C5F8 0%,
+        #2FB8F6 50%,
+        #0389C3 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .tech-item[title="Node.js"] i {
