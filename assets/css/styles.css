@@ -105,16 +105,16 @@
 .project-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 1.5rem 0;
+    gap: 0.75rem;
+    margin: 2rem 0;
 }
 
 .project-tech span {
     background: #f3f4f6;
     color: #4b5563;
-    padding: 0.35rem 0.75rem;
+    padding: 0.5rem 1.25rem;
     border-radius: 9999px;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     transition: all 0.2s ease;
     font-weight: 500;
 }
@@ -357,12 +357,35 @@ body::after {
     top: -2px;
 }
 
-.lead {
-    color: rgba(255, 255, 255, 0.9);  /* Slightly brighter white */
+/* Lead text styles */
+.hero-content .lead {
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.25rem;
     max-width: 720px;
-    margin: 0 auto 2rem;  /* Reduced from 2.5rem */
-    line-height: 1.4;  /* Reduced from 1.6 */
+    margin: 0 auto 2rem;
+    line-height: 1.4;
+}
+
+.about-content .lead {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .hero-content .lead {
+        font-size: 1rem;
+        max-width: 100%;
+        padding: 0 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-content .lead {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
 }
 
 /* Add spacing control for CTA buttons */
@@ -756,7 +779,7 @@ body::after {
 
     .project-images-stack {
         height: 280px;
-        padding: 0.5rem;
+        /* padding: 0.5rem; */
     }
 
     .project-images-stack .dashboard {
@@ -1174,109 +1197,29 @@ html {
     }
 }
 
-/* Update section background handling */
-section:nth-child(even) {
-    background: var(--background);
+/* Update projects grid layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
 }
 
-section:last-child {
-    background: transparent;
+/* Style for second row with single card */
+.project-card:nth-child(4) {
+    grid-column: 2;
+    margin-top: 2rem;
 }
 
-.about-content {
-    max-width: 800px;
-    margin: 0 auto 3rem;
-}
-
-.about-content .lead {
-    font-size: 1.125rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-    margin-bottom: 2rem;
-    text-align: justify;
-}
-
-/* Optional: Add emphasis to location and role */
-.about-content .highlight {
-    color: var(--primary);
-    font-weight: 500;
-}
-
-/* Enhance spacing for mobile */
 @media (max-width: 768px) {
-    .about-content .lead {
-        font-size: 1rem;
-        text-align: justify;
+    .projects-grid {
+        grid-template-columns: 1fr;
         padding: 0 1rem;
     }
-}
-
-/* Remove container from About section */
-.about-section {
-    padding: 4rem 2rem;
-    position: relative;
-    background: transparent !important;
-}
-
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Section title without background */
-.about-section .section-title {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: var(--text-primary);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .about-section {
-        padding: 3rem 1.5rem;
-    }
-}
-
-/* Override any section:nth-child backgrounds */
-section:nth-child(even) {
-    background: transparent;
-}
-
-/* Remove Latest Articles section styles */
-.articles-section {
-    display: none;
-}
-
-/* Keep individual cards styled but remove section background */
-.article-card,
-.blog-card {
-    background: var(--surface);
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid var(--border);
-    transition: var(--transition);
-}
-
-.article-card:hover,
-.blog-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
-}
-
-/* Blog post metadata */
-.blog-date {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .about-section,
-    .articles-section,
-    .blog-section {
-        padding: 3rem 1.5rem;
+    
+    .project-card:nth-child(4) {
+        grid-column: auto;
+        margin-top: 1rem;
     }
 }
 
