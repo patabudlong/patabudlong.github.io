@@ -127,8 +127,8 @@
 
 .project-links {
     display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .project-links a {
@@ -139,7 +139,23 @@
 }
 
 .project-links .btn {
-    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.75rem;
+    min-width: 160px;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.project-links .btn i {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.project-links .btn:hover i {
+    transform: translateY(-1px);
 }
 
 .social-links {
