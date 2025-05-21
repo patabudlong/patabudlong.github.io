@@ -813,22 +813,17 @@ body::after {
     }
 
     .tech-categories {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .tech-category {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .tech-category h4 {
-        text-align: center;
-        margin: 0 auto 1rem;
+        box-sizing: border-box;
     }
 
     .contact-section {
@@ -868,6 +863,12 @@ body::after {
     .tech-item {
         padding: 0.75rem 0.25rem;
         width: 100%;
+    }
+
+    .about-content .lead {
+        font-size: 1rem;
+        text-align: justify;
+        padding: 0 1rem;
     }
 }
 
@@ -963,11 +964,47 @@ html {
 }
 
 @media (max-width: 768px) {
-    .scroll-to-top {
-        bottom: 1.5rem;
-        right: 1.5rem;
-        width: 3rem;
-        height: 3rem;
+    .hero-wrapper {
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
+        margin: 0 auto;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .tech-stack {
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .tech-categories {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tech-category {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -1003,7 +1040,8 @@ section:last-child {
 @media (max-width: 768px) {
     .about-content .lead {
         font-size: 1rem;
-        text-align: left;
+        text-align: justify;
+        padding: 0 1rem;
     }
 }
 
@@ -1150,7 +1188,7 @@ section:nth-child(even) {
         gap: 1rem;
         padding: 0;
         margin: 0;
-        width: 85%;
+        width: 100%;
     }
     
     .tech-category {
