@@ -1203,32 +1203,29 @@ html {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Position fourth and fifth cards in second row */
-.project-card:nth-child(4),
-.project-card:nth-child(5) {
-    margin-top: 2rem;
+/* Force first 3 cards in first row, rest in second row */
+.project-card:nth-child(n+4) {
+    grid-column: auto;
 }
 
-/* Center cards in second row */
+/* Add spacing for second row */
 .project-card:nth-child(4) {
-    grid-column: 1 / 2;
-}
-
-.project-card:nth-child(5) {
-    grid-column: 2 / 3;
+    grid-column: 1;
 }
 
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
         padding: 0 1rem;
     }
     
     .project-card:nth-child(n+4) {
         grid-column: auto;
-        margin-top: 1rem;
     }
 }
 
