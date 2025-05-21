@@ -730,7 +730,7 @@ body::after {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
-        padding: 4rem 0 3rem;
+        padding: 2rem 1rem;
     }
 
     .profile-image {
@@ -749,7 +749,8 @@ body::after {
     .lead {
         font-size: 1rem;
         max-width: 100%;
-        padding: 0 1rem;
+        padding: 0 0.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .section-title {
@@ -764,6 +765,8 @@ body::after {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        padding: 0 0.5rem;
+        margin-top: 2rem;
     }
 
     .btn {
@@ -791,8 +794,41 @@ body::after {
     }
 
     .container {
-        padding: 0 1rem;
+        padding: 0;
+        width: 100%;
         max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tech-categories {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .tech-category {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tech-category h4 {
+        text-align: center;
+        margin: 0 auto 1rem;
     }
 
     .contact-section {
@@ -1148,4 +1184,16 @@ section:nth-child(even) {
         padding-top: 1.5rem;
         font-size: 1rem;
     }
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    overflow-x: hidden;
+    width: 100%;
 }
