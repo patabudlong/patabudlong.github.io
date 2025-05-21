@@ -729,9 +729,9 @@ body::after {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero {
+    /* .hero {
         padding: 2rem 1rem;
-    }
+    } */
 
     .profile-image {
         width: 220px;
@@ -869,6 +869,25 @@ body::after {
         font-size: 1rem;
         text-align: justify;
         padding: 0 1rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0 1rem;
+        margin: 2rem 0;
+    }
+
+    .stat-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .stat-card h3 {
+        font-size: 1.75rem;
+    }
+
+    .stat-card p {
+        font-size: 0.9rem;
     }
 }
 
