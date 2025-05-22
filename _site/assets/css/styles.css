@@ -1414,6 +1414,19 @@ section:nth-child(even) {
     color: #0891B2;
 }
 
+.linode-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #00B4E4;  /* Akamai Cloud blue */
+    margin-bottom: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.tech-item[title="Linode"]:hover .linode-icon {
+    transform: translateY(-2px);
+    color: #0077B5;  /* Darker blue on hover */
+}
+
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
