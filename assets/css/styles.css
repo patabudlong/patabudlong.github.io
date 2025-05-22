@@ -1409,3 +1409,27 @@ main {
 .tech-item[title="Linode"] i {
     color: #02B159;
 }
+
+.project-link {
+    color: var(--primary-color, #007bff);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    transform: translateY(-1px);
+    color: var(--primary-color-dark, #0056b3);
+}
+
+.project-link i {
+    font-size: 1.1rem;
+}
+
+.project-links {
+    margin-top: 1.5rem;
+    text-align: right;
+}
