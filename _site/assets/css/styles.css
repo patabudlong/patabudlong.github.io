@@ -534,12 +534,7 @@ body::after {
 
 .tech-item[title="Flutter"] i {
     color: #54C5F8;
-    background: linear-gradient(
-        135deg,
-        #54C5F8 0%,
-        #2FB8F6 50%,
-        #0389C3 100%
-    );
+    background: linear-gradient(45deg, #54C5F8 0%, #0389C3 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -563,6 +558,11 @@ body::after {
 
 .tech-item[title="MySQL"] i {
     color: #4479A1;
+    transform: rotate(-10deg);
+}
+
+.tech-item[title="MySQL"]:hover i {
+    transform: rotate(-10deg) translateY(-2px);
 }
 
 .tech-item[title="Vue.js"] i {
@@ -646,7 +646,11 @@ body::after {
 }
 
 .tech-item[title="Supabase"] i {
-    color: #24B47E;
+    color: #3ECF8E;
+}
+
+.tech-item[title="PostgreSQL"] i {
+    color: #336791;
 }
 
 .tech-item:hover i {
@@ -1380,4 +1384,28 @@ main {
     .project-tech span i {
         font-size: 0.875rem;
     }
+}
+
+.mysql-icon {
+    color: #4479A1;
+    transform: scaleX(-1) rotate(-45deg);
+}
+
+.tech-item[title="MySQL"]:hover .mysql-icon {
+    transform: scaleX(-1) rotate(-45deg) translateY(-2px);
+}
+
+.flask-icon {
+    color: #000000;
+    transform: rotate(-10deg);
+    transition: all 0.3s ease;
+}
+
+.tech-item[title="Flask"]:hover .flask-icon {
+    transform: rotate(-10deg) scale(1.1);
+    color: #4A5568;
+}
+
+.tech-item[title="Linode"] i {
+    color: #02B159;
 }
