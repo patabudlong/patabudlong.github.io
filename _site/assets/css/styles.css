@@ -1522,6 +1522,27 @@ section:nth-child(even) {
     }
 }
 
+.tech-item[title="Ruby"] i {
+    color: #CC342D;
+}
+
+.tech-item[title="Ruby on Rails"] i {
+    color: #CC0000;
+}
+
+.rails-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #CC0000;
+    margin-bottom: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.tech-item[title="Ruby on Rails"]:hover .rails-icon {
+    transform: translateY(-2px);
+    color: #A30000;
+}
+
 
 
 
